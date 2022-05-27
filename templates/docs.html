@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      	<link href="/static/css/jquery.fancybox.css" rel="stylesheet" >
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+	<script src="/static/js/jquery.fancybox.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <title>SIH 2022</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Sidebars · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/sidebars.css" rel="stylesheet">
+
+
+</head>
+  <body style=/*"background-color:#065446"*/>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#142632;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img class="img-fluid" src="/static/images/SIH.png" height="75%" width="75%"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="docs.html">Documentation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <title>Bootstrap</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+  </symbol>
+  <symbol id="home" viewBox="0 0 16 16">
+    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+  </symbol>
+  <symbol id="speedometer2" viewBox="0 0 16 16">
+    <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+    <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+  </symbol>
+  <symbol id="table" viewBox="0 0 16 16">
+    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+  </symbol>
+  <symbol id="people-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+  </symbol>
+  <symbol id="grid" viewBox="0 0 16 16">
+    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+  </symbol>
+  <symbol id="collection" viewBox="0 0 16 16">
+    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+  </symbol>
+  <symbol id="calendar3" viewBox="0 0 16 16">
+    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </symbol>
+  <symbol id="chat-quote-fill" viewBox="0 0 16 16">
+    <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+  </symbol>
+  <symbol id="cpu-fill" viewBox="0 0 16 16">
+    <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+    <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>
+  </symbol>
+  <symbol id="gear-fill" viewBox="0 0 16 16">
+    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+  </symbol>
+  <symbol id="speedometer" viewBox="0 0 16 16">
+    <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+    <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+  </symbol>
+  <symbol id="toggles2" viewBox="0 0 16 16">
+    <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
+    <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>
+    <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+  </symbol>
+  <symbol id="tools" viewBox="0 0 16 16">
+    <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+  <symbol id="geo-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+  </symbol>
+</svg>
+<div class="row">
+<div class="col-3" style="background-color:#212529">
+<main style="margin-top:90px; position: fixed;width:35%;height: 100%;">
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark flex-shrink-0 p-3" style="width:70%; max-height:100%;">
+
+    <a href="#project" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-square-fill" viewBox="0 0 16 16">
+  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
+</svg>&nbsp;&nbsp;&nbsp;<span>Project Details</span>
+    </a>
+      <hr>
+<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
+  <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+  <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+</svg>&nbsp;<span><b>Project Structure</b></span>
+    </a>
+
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1 text-white"  >
+        <button style="color: #ffffff" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          model
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
+            <li ><a href="#datamodel" class="link-dark rounded" style="color: #ffffff" >Cotten_Prediction.h5</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button style="color: #ffffff" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          static
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#photos" class="link-dark rounded" style="color: #ffffff">images</a></li>
+              <li><a href="#css" class="link-dark rounded"style="color: #ffffff">CSS</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button style="color: #ffffff" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          templates
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#index_html" class="link-dark rounded" style="color: #ffffff">index.html</a></li>
+            <li><a href="#aboutus.html" class="link-dark rounded" style="color: #ffffff">aboutus.html</a></li>
+            <li><a href="#healthy_plant_html" class="link-dark rounded" style="color: #ffffff">healtyplant.html</a></li>
+            <li><a href="#diease_plant_html" class="link-dark rounded" style="color: #ffffff">deseaseplant.html</a></li>
+            <li><a href="#healthy_plant_leaf_html" class="link-dark rounded" style="color: #ffffff">healthyplant_leaf.html</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+       <a href="#app_py"> <button  style="color: #ffffff" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          App.py
+       </button></a>
+      </li>
+      <li class="mb-1">
+        <a href="#datamodel_py"><button style="color: #ffffff" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          datamodel.py
+        </button></a>
+      </li>
+    </ul>
+
+  </div>
+</main>
+</div>
+  <div class="col-9" style="border-color:red;margin-top: 100px;">
+    <!-- write content here -->
+<br id="project">
+      <br><br><br>
+      <div>
+
+       <img src="/static/images/Capture.PNG" class="img-fluid" alt="...">
+       <img src="/static/images/Capture2.PNG" class="img-fluid" alt="...">
+
+      </div><br>
+<br id="datamodel"><br><br>
+<br><br><br>
+  <div class="alert alert-info" role="alert">
+  A datamodel is availabe At &nbsp;<a href="https://drive.google.com/file/d/1tvIWSuRyER6pITGpPE-GcWjK53BIHVDP/view?usp=sharing" class="alert-link">Cotten_Prediction</a>
+</div>
+
+
+
+      <br id="photos">
+      <br><br><br>
+      <div class="photos" >
+	<table border="0" bordercolor="#FF0000" cellspacing="1px" cellpadding="1px" width="100%">
+		<tr>
+			<td colspan="4">
+            	<h1 align="center">Some Statics Images </h1>
+			</td>
+		</tr>
+
+   <tr>
+			<td ><a data-fancybox="gallary" href="/static/images/1.jpg"><img src="/static/images/1.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+			<td ><a data-fancybox="gallary" href="/static/images/2.jpg"><img src="/static/images/2.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+			<td ><a data-fancybox="gallary" href="/static/images/3.jpg"><img src="/static/images/3.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+			<td ><a data-fancybox="gallary" href="/static/images/Gallery1.jpg"><img src="/static/images/Gallery1.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+		</tr>
+        <tr >
+			<td ><a data-fancybox="gallary" href="/static/images/Gallery2.jpg"><img src="/static/images/Gallery2.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+			<td ><a data-fancybox="gallary" href="/static/images/Gallery3.jpg"><img src="/static/images/Gallery3.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+			<td ><a data-fancybox="gallary" href="/static/images/Gallery4.jpg"><img src="/static/images/Gallery4.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+			<td ><a data-fancybox="gallary" href="/static/images/img3.jpg"><img src="/static/images/img3.jpg" class="pic img-thumbnail img-fluid"/></a></td>
+		</tr>
+
+
+	</table>
+</div>
+
+      <br id="css"><br><br><br>
+      <div style="background-color:#8deaca">
+     <h2 id="aboutus-css" align="center">aboutus.css</h2>
+<pre><code><span class="hljs-selector-tag">p</span>{
+    <span class="hljs-attribute">margin-left</span>:<span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">margin-top</span>:<span class="hljs-number">10px</span>;
+}
+</code></pre><h2 id="sidebar-css" align="center">sidebar.css</h2>
+<pre><code><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">100vh</span>;
+  <span class="hljs-attribute">min-height</span>: -webkit-fill-available;
+}
+
+<span class="hljs-selector-tag">html</span> {
+  <span class="hljs-attribute">height</span>: -webkit-fill-available;
+}
+
+<span class="hljs-selector-tag">main</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-wrap</span>: nowrap;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+  <span class="hljs-attribute">height</span>: -webkit-fill-available;
+  <span class="hljs-attribute">max-height</span>: <span class="hljs-number">100vh</span>;
+  <span class="hljs-attribute">overflow-x</span>: auto;
+  <span class="hljs-attribute">overflow-y</span>: hidden;
+}
+
+<span class="hljs-selector-class">.b-example-divider</span> {
+  <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">1.5rem</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(0, 0, 0, .1);
+  <span class="hljs-attribute">border</span>: solid <span class="hljs-built_in">rgba</span>(0, 0, 0, .15);
+  <span class="hljs-attribute">border-width</span>: <span class="hljs-number">1px</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0</span> .<span class="hljs-number">5em</span> <span class="hljs-number">1.5em</span> <span class="hljs-built_in">rgba</span>(0, 0, 0, .1), inset <span class="hljs-number">0</span> .<span class="hljs-number">125em</span> .<span class="hljs-number">5em</span> <span class="hljs-built_in">rgba</span>(0, 0, 0, .15);
+}
+
+<span class="hljs-selector-class">.bi</span> {
+  <span class="hljs-attribute">vertical-align</span>: -.<span class="hljs-number">125em</span>;
+  <span class="hljs-attribute">pointer-events</span>: none;
+  <span class="hljs-attribute">fill</span>: currentColor;
+}
+
+<span class="hljs-selector-class">.dropdown-toggle</span> { <span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>; }
+
+<span class="hljs-selector-class">.nav-flush</span> <span class="hljs-selector-class">.nav-link</span> {
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.btn-toggle</span> {
+  <span class="hljs-attribute">display</span>: inline-flex;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">padding</span>: .<span class="hljs-number">25rem</span> .<span class="hljs-number">5rem</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgba</span>(0, 0, 0, .65);
+  <span class="hljs-attribute">background-color</span>: transparent;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.btn-toggle</span><span class="hljs-selector-pseudo">:hover</span>,
+<span class="hljs-selector-class">.btn-toggle</span><span class="hljs-selector-pseudo">:focus</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgba</span>(0, 0, 0, .85);
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#3c957b</span>
+}
+
+<span class="hljs-selector-class">.btn-toggle</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">1.25em</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">content</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e"</span>);
+  <span class="hljs-attribute">transition</span>: transform .<span class="hljs-number">35s</span> ease;
+  <span class="hljs-attribute">transform-origin</span>: .<span class="hljs-number">5em</span> <span class="hljs-number">50%</span>;
+}
+
+<span class="hljs-selector-class">.btn-toggle</span><span class="hljs-selector-attr">[aria-expanded="true"]</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgba</span>(0, 0, 0, .85);
+}
+<span class="hljs-selector-class">.btn-toggle</span><span class="hljs-selector-attr">[aria-expanded="true"]</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(90deg);
+}
+
+<span class="hljs-selector-class">.btn-toggle-nav</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">display</span>: inline-flex;
+  <span class="hljs-attribute">padding</span>: .<span class="hljs-number">1875rem</span> .<span class="hljs-number">5rem</span>;
+  <span class="hljs-attribute">margin-top</span>: .<span class="hljs-number">125rem</span>;
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">1.25rem</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+<span class="hljs-selector-class">.btn-toggle-nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>,
+<span class="hljs-selector-class">.btn-toggle-nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#23b194</span>;
+}
+
+<span class="hljs-selector-class">.scrollarea</span> {
+  <span class="hljs-attribute">overflow-y</span>: auto;
+}
+
+<span class="hljs-selector-class">.fw-semibold</span> { <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>; }
+<span class="hljs-selector-class">.lh-tight</span> { <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.25</span>; }
+</code></pre><h2 id="style-css" align="center">style.css</h2>
+<pre><code>@<span class="hljs-keyword">import</span> url(https://fonts.googleapis.com/css?family=Open+Sans:<span class="hljs-number">700</span>,<span class="hljs-number">300</span>);
+
+<span class="hljs-selector-class">.carousel-inner</span> <span class="hljs-selector-tag">img</span> {
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">85vh</span>;
+        }
+
+<span class="hljs-selector-class">.input-group</span>{
+<span class="hljs-attribute">margin-top</span>:<span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">margin-bottom</span>:<span class="hljs-number">150px</span>;
+}
+<span class="hljs-selector-class">.input-group-text</span>{
+  <span class="hljs-attribute">display</span>: block;
+}
+<span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">button</span>{
+  <span class="hljs-attribute">text-align</span>: center;
+}
+<span class="hljs-selector-class">.pic</span>{
+<span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;
+<span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;
+<span class="hljs-attribute">border-radius</span>:<span class="hljs-number">30px</span> <span class="hljs-number">0px</span> <span class="hljs-number">30px</span> <span class="hljs-number">0px</span>;}
+
+<span class="hljs-selector-class">.picc</span>{
+<span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;
+<span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;
+<span class="hljs-attribute">border-radius</span>:<span class="hljs-number">0px</span> <span class="hljs-number">30px</span> <span class="hljs-number">0px</span> <span class="hljs-number">30px</span>;}
+
+
+<span class="hljs-selector-tag">form</span>{
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">250px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">507px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">4px</span> solid <span class="hljs-number">#ebe3e3</span>;;
+
+
+}
+<span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">p</span>{
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">170px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#000000</span>;
+  <span class="hljs-attribute">font-family</span>: Arial;
+}
+<span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">input</span>{
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">outline</span>: none;
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">button</span>{
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#16a085</span>;
+  <span class="hljs-attribute">border</span>: none;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">508px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">35px</span>;
+  <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">4px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">4px</span> solid <span class="hljs-number">#117A60</span>;
+  <span class="hljs-attribute">transition</span>: all .<span class="hljs-number">2s</span> ease;
+  <span class="hljs-attribute">outline</span>: none;
+}
+<span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">button</span>:hover{
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#149174</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#0C5645</span>;
+}
+<span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">button</span>:active{
+  <span class="hljs-attribute">border</span>:<span class="hljs-number">0</span>;
+}
+</code></pre>
+      </div>
+
+<br id="index_html">
+    <br><br><br>
+    <h1 align="center">index.html</h1>
+<div style="background-color:#a6a6a6"><pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Required meta tags --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Bootstrap CSS --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/static/css/style.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>SIH 2022<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#065446"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-lg navbar-dark "</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#142632"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/SIH.png"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"75%"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"75%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#navbarSupportedContent"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbarSupportedContent"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav me-auto mb-2 mb-lg-0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"aboutus.html"</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"docs.html"</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"carouselExampleIndicators"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel slide"</span> <span class="hljs-attr">data-bs-ride</span>=<span class="hljs-string">"carousel"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-indicators"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide-to</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Slide 1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide-to</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Slide 2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide-to</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Slide 3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-inner"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item active"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/1.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"static/images/2.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"static/images/3.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d-block w-100"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-prev"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string">"prev"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-prev-icon"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"visually-hidden"</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-next"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#carouselExampleIndicators"</span> <span class="hljs-attr">data-bs-slide</span>=<span class="hljs-string">"next"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-control-next-icon"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"visually-hidden"</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group container-fluid"</span> &gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/predict"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #17856a"</span> <span class="hljs-attr">enctype</span>=<span class="hljs-string">"multipart/form-data"</span> <span class="hljs-attr">onsubmit</span>=<span class="hljs-string">"showloading()"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"file"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"image"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control upload"</span> <span class="hljs-attr">accept</span>=<span class="hljs-string">"image/*"</span> &gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color:#fbdcad"</span>&gt;</span>Drag your Cotten Plant photo here or click in this area.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group-text "</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>  &gt;</span> Click here to Upload image<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/js/1.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</div>
+<br id="aboutus.html"><br><br><br>
+    <h1 align="center">Aboutus.html</h1>
+    <div style="background-color:#a6a6a6">
+      <pre><code><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Required meta tags --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Bootstrap CSS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/static/css/aboutus.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>SIH 2022<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#065446"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-lg navbar-dark "</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#142632; height: 100px;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/SIH.png"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"75%"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"75%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#navbarSupportedContent"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbarSupportedContent"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav me-auto mb-2 mb-lg-0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link active"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"aboutus.html"</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"docs.html"</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main z-depth-3 container"</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row light-blue lighten-5 z-depth-4 "</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"circle"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/mj.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"300px"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-8"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Manoj Sharma<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/ErManoj-Sharma"</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bi bi-github"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 16 16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> &amp;nbsp;
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.linkedin.com/in/ermanojsharmait/"</span>  &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bi bi-linkedin"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 16 16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&amp;nbsp;
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://ermanoj-sharma.github.io/portfolio/"</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bi bi-globe"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 16 16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"post"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>B-Tech Information Technology(18-22)<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>MLV Textile &amp; Engineering College Bhilwara <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Responsibility :~ <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Create datamodel<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>Train datamodel<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Support in application development<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row green lighten-5 z-depth-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"circle"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/pri2.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"300px"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-8"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Priyanshi Samriya<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.linkedin.com/in/priyanshi-samriya-65570b16a"</span>  &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bi bi-linkedin"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 16 16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"post"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>B-Tech Information Technology(18-22)<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>MLV Textile &amp; Engineering College Bhilwara <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Responsibility :~ <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Back End Development <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Support in application development<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row red lighten-5 z-depth-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"circle"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/avi.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"300px"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-8"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Avichal Vishnoi<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/avichalvishnoi"</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bi bi-github"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 16 16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"post"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>B-Tech Information Technology(18-22)<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>MLV Textile &amp; Engineering College Bhilwara <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Responsibility :~ <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Create Documentation<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Support in application development<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row yellow lighten-5 z-depth-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"circle"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/bhasker.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"300px"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-8"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Bhasker Sharma<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.linkedin.com/in/bhaskar-sharma-732680222"</span>  &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bi bi-linkedin"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 16 16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"post"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>B-Tech Information Technology(18-22)<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>MLV Textile &amp; Engineering College Bhilwara <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Responsibility :~ <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Front End Development <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Support in application development<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row blue lighten-5 z-depth-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"circle"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/Dheeraj.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"300px"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-8"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Dheeraj Prajapati<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.linkedin.com/in/dheeraj-prajapati-399a64209/"</span>  &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"currentColor"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bi bi-linkedin"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 16 16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"post"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>B-Tech Information Technology(18-22)<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>MLV Textile &amp; Engineering College Bhilwara <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Responsibility :~ <span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Application Hosting <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Support in application development<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+    </div>
+
+    <br id="healthy_plant_html">
+    <br><br><br>
+    <h1 align="center">Healthy_Plant.html</h1>
+    <div style="background-color:#a6a6a6"><pre><code class="lang-html"><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Bootstrap CSS --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"</span>
+        <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>COTTON PLANT DISEASE PREDICTION<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        * {
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">box-sizing</span>: border-box;
+        }
+
+        <span class="hljs-selector-class">.border</span> <span class="hljs-selector-tag">img</span> {
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">15px</span>;
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-lg navbar-dark "</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#142632"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/SIH.png"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"75%"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"75%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#navbarSupportedContent"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbarSupportedContent"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav me-auto mb-2 mb-lg-0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"aboutus.html"</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"docs.html"</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container my-2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mb-5"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-bottom: 23px;"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-primary"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ user_image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"User Image"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-thumbnail"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"padding: 15px; background-color: rgb(153, 156, 150); color: white;"</span>
+                        <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center mb-5 content-h1 rounded"</span>&gt;</span>
+                        </span><span class="hljs-template-variable">{{pred_output}}</span><span class="xml"> <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"details"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>
+
+                        There is no disease on the cotton Plant.<span class="hljs-tag">&lt;/<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">br</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span>
+</code></pre>
+</div>
+
+    <br id="diease_plant_html">
+    <br><br><br>
+    <h1 align="center">diease_plant.html</h1>
+    <div style="background-color:#a6a6a6"><pre><code class="lang-html"><span class="xml"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Required meta tags --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Bootstrap CSS --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"</span>
+        <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>COTTON PLANT DISEASE PREDICTION<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        * {
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">box-sizing</span>: border-box;
+        }
+
+        <span class="hljs-selector-class">.card-style</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#dcdcdc</span>;
+
+        }
+
+        <span class="hljs-selector-class">.content</span> {
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span>;
+            <span class="hljs-attribute">color</span>: white;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(153, 156, 150);
+            <span class="hljs-comment">/* font-size: 1rem; */</span>
+        }
+
+        @<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">430px</span>) and (min-width: <span class="hljs-number">200px</span>) {
+
+
+            <span class="hljs-selector-class">.contents</span> {
+                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.6rem</span>;
+                <span class="hljs-attribute">color</span>: chartreuse;
+            }
+
+            <span class="hljs-selector-class">.content-h1</span> {
+
+                <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
+            }
+        }
+
+        <span class="hljs-selector-class">.border</span> <span class="hljs-selector-tag">img</span> {
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">15px</span>;
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-lg navbar-dark "</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#142632"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/SIH.png"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"75%"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"75%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#navbarSupportedContent"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbarSupportedContent"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav me-auto mb-2 mb-lg-0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"aboutus.html"</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"docs.html"</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+
+
+
+
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container my-2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mb-5"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-bottom: 23px;"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-primary"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ user_image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"User Image"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-thumbnail"</span>&gt;</span>
+                    <span class="hljs-comment">&lt;!-- &lt;img src="</span></span><span class="hljs-template-variable">{{pred_output}}</span><span class="xml"><span class="hljs-comment">" alt="User Image" class="img-thumbnail"&gt; --&gt;</span>
+
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"padding: 15px; background-color: rgb(153, 156, 150); color: white;"</span>
+                        <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center mb-5 content-h1 rounded"</span>&gt;</span>
+                        </span><span class="hljs-template-variable">{{pred_output}}</span><span class="xml"> <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Disease Name  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"line-height: 100%;"</span>&gt;</span>Attack of Leaf Sucking and Chewing Pests <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"w-100 mx-auto "</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span> Solution for Disease  <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Use any one Systemic Insecticide, which contain<span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span> Flonicamid 50%/ Thiamethoxam 25% WG / Imidacloprid
+                    17.8 Sl / Acetamiprid 20% SP.<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"padding: 15px; background-color: rgb(153, 156, 150); color: white;"</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center my-3 content-h1"</span>&gt;</span>
+                Recommended Products<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-columns"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body text-center card-style"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"border-radius: 10px;"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/preet.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Dose: 60-80 gm/Acre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body text-center card-style"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"border-radius: 10px;"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/ulala.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Dose: 25-40 gm/Acre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body text-center card-style"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"border-radius: 10px"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/victor.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Dose: 60-80 gm/Acre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body text-center card-style"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"border-radius: 10px;"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/confidor.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Dose: 25-35 ml/Acre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body text-center card-style"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"border-radius: 10px;"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/panama.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Dose: 60-80 gm/Acre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card "</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body text-center card-style"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"border-radius: 10px;"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/actara.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Dose: 60-80 gm/Acre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span>
+</code></pre>
+</div>
+
+    <br id="healthy_plant_leaf_html">
+    <br><br><br>
+    <h1 align="center">healthy_plant_leaf.html</h1>
+    <div style="background-color:#a6a6a6"><pre><code class="lang-html"><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Bootstrap CSS --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"</span>
+        <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>COTTON PLANT DISEASE PREDICTION<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        * {
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">box-sizing</span>: border-box;
+        }
+
+        <span class="hljs-selector-class">.border</span> <span class="hljs-selector-tag">img</span> {
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">15px</span>;
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-lg navbar-dark "</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color:#142632"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/static/images/SIH.png"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"75%"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"75%"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-bs-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-bs-target</span>=<span class="hljs-string">"#navbarSupportedContent"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbarSupportedContent"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav me-auto mb-2 mb-lg-0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link active"</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">"page"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"aboutus.html"</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"docs.html"</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container my-2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row mb-5"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-bottom: 23px;"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border border-primary"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ user_image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"User Image"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-thumbnail"</span>&gt;</span>
+
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"padding: 15px; background-color: rgb(153, 156, 150); color: white;"</span>
+                        <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center mb-5 content-h1 rounded"</span>&gt;</span>
+                        </span><span class="hljs-template-variable">{{pred_output}}</span><span class="xml"> <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"details"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>
+
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>There is no disease on the cotton plant.<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">br</span>&gt;</span>
+                        Although the chemical fertilizer has fallen on the leaves of the tree, the leaves are burnt, but
+                        there is no need to worry.<span class="hljs-tag">&lt;/<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">br</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span>
+</code></pre>
+</div>
+    <br id="app_py">
+    <br><br><br>
+    <h1 align="center"> app.py </h1>
+<div style="background-color:#66a3ff" >
+  <pre  ><code class="lang-python3"><span class="hljs-comment">#Import necessary libraries</span>
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask, render_template, request
+
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> os
+
+<span class="hljs-keyword">from</span> keras.preprocessing.image <span class="hljs-keyword">import</span> load_img
+<span class="hljs-keyword">from</span> keras.preprocessing.image <span class="hljs-keyword">import</span> img_to_array
+<span class="hljs-keyword">from</span> keras.models <span class="hljs-keyword">import</span> load_model
+
+<span class="hljs-comment">#load model</span>
+model =load_model(<span class="hljs-string">"model/v3_pred_cott_dis.h5"</span>)
+
+print(<span class="hljs-string">'@@ Model loaded'</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pred_cot_dieas</span><span class="hljs-params">(cott_plant)</span>:</span>
+  test_image = load_img(cott_plant, target_size = (<span class="hljs-number">150</span>, <span class="hljs-number">150</span>)) <span class="hljs-comment"># load image </span>
+  print(<span class="hljs-string">"@@ Got Image for prediction"</span>)
+
+  test_image = img_to_array(test_image)/<span class="hljs-number">255</span> <span class="hljs-comment"># convert image to np array and normalize</span>
+  test_image = np.expand_dims(test_image, axis = <span class="hljs-number">0</span>) <span class="hljs-comment"># change dimention 3D to 4D</span>
+
+  result = model.predict(test_image).round(<span class="hljs-number">3</span>) <span class="hljs-comment"># predict diseased palnt or not</span>
+  print(<span class="hljs-string">'@@ Raw result = '</span>, result)
+
+  pred = np.argmax(result) <span class="hljs-comment"># get the index of max value</span>
+
+  <span class="hljs-keyword">if</span> pred == <span class="hljs-number">0</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Healthy Cotton Plant"</span>, <span class="hljs-string">'healthy_plant_leaf.html'</span> <span class="hljs-comment"># if index 0 burned leaf</span>
+  <span class="hljs-keyword">elif</span> pred == <span class="hljs-number">1</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Diseased Cotton Plant'</span>, <span class="hljs-string">'disease_plant.html'</span> <span class="hljs-comment"># # if index 1</span>
+  <span class="hljs-keyword">elif</span> pred == <span class="hljs-number">2</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Healthy Cotton Plant'</span>, <span class="hljs-string">'healthy_plant.html'</span>  <span class="hljs-comment"># if index 2  fresh leaf</span>
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Healthy Cotton Plant"</span>, <span class="hljs-string">'healthy_plant.html'</span> <span class="hljs-comment"># if index 3</span>
+
+<span class="hljs-comment">#------------&gt;&gt;pred_cot_dieas&lt;&lt;--end</span>
+
+
+<span class="hljs-comment"># Create flask instance</span>
+app = Flask(__name__)
+
+<span class="hljs-comment"># render index.html page</span>
+<span class="hljs-meta">@app.route("/", methods=['GET', 'POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">home</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">'index.html'</span>)
+<span class="hljs-meta">@app.route("/docs.html", methods=['GET', 'POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">docs</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">'docs.html'</span>)
+<span class="hljs-meta">@app.route("/aboutus.html", methods=['GET', 'POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">aboutus</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">'aboutus.html'</span>)
+
+
+
+<span class="hljs-comment"># get input image from client then predict class and render respective .html page for solution</span>
+<span class="hljs-meta">@app.route("/predict", methods = ['GET','POST'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">predict</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">'POST'</span>:
+        file = request.files[<span class="hljs-string">'image'</span>] <span class="hljs-comment"># fet input</span>
+        filename = file.filename
+        print(<span class="hljs-string">"@@ Input posted = "</span>, filename)
+
+        file_path = os.path.join(<span class="hljs-string">'static/user uploaded'</span>, filename)
+        file.save(file_path)
+
+        print(<span class="hljs-string">"@@ Predicting class......"</span>)
+        pred, output_page = pred_cot_dieas(cott_plant=file_path)
+
+        <span class="hljs-keyword">return</span> render_template(output_page, pred_output = pred, user_image = file_path)
+
+<span class="hljs-comment"># For local system &amp; cloud</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:
+    app.run(threaded=<span class="hljs-keyword">False</span>,)
+</code></pre>
+</div>
+<br id="datamodel_py">
+    <br><br><br>
+<h1 align="center"> datamodel.py </h1>
+<div style="background-color:#66a3ff" >
+  <pre>
+
+<span class="hljs-comment">#import libraries</span>
+<span class="hljs-built_in">import</span> keras
+from keras.preprocessing.image <span class="hljs-built_in">import</span> ImageDataGenerator
+from keras.optimizers <span class="hljs-built_in">import</span> Adam
+from keras.callbacks <span class="hljs-built_in">import</span> ModelCheckpoint
+
+<span class="hljs-comment"># for accuracy and loss graph</span>
+<span class="hljs-built_in">import</span> matplotlib.pyplot as plt
+
+keras.__version__
+
+<span class="hljs-attr">train_data_path</span> = <span class="hljs-string">"/content/drive/MyDrive/data/train"</span>
+<span class="hljs-attr">validation_data_path</span> = <span class="hljs-string">"/content/drive/MyDrive/data/val"</span>
+
+<span class="hljs-comment"># show augmented images</span>
+def plotImages(images_arr):
+    fig, <span class="hljs-attr">axes</span> = plt.subplots(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-attr">figsize=(20,</span> <span class="hljs-number">20</span>))
+    <span class="hljs-attr">axes</span> = axes.flatten()
+    for img, ax <span class="hljs-keyword">in</span> zip(images_arr, axes):
+        ax.imshow(img)
+    plt.tight_layout()
+    plt.show()
+
+<span class="hljs-comment"># this is the augmentation configuration we will use for training</span>
+<span class="hljs-comment"># It generate more images using below parameters</span>
+<span class="hljs-attr">training_datagen</span> = ImageDataGenerator(<span class="hljs-attr">rescale=1./255,</span>
+                                      <span class="hljs-attr">rotation_range=40,</span>
+                                      <span class="hljs-attr">width_shift_range=0.2,</span>
+                                      <span class="hljs-attr">height_shift_range=0.2,</span>
+                                      <span class="hljs-attr">shear_range=0.2,</span>
+                                      <span class="hljs-attr">zoom_range=0.2,</span>
+                                      <span class="hljs-attr">horizontal_flip=True,</span>
+                                      <span class="hljs-attr">fill_mode='nearest')</span>
+
+<span class="hljs-comment"># this is a generator that will read pictures found in</span>
+<span class="hljs-comment"># at train_data_path, and indefinitely generate</span>
+<span class="hljs-comment"># batches of augmented image data</span>
+<span class="hljs-attr">training_data</span> = training_datagen.flow_from_directory(train_data_path, <span class="hljs-comment"># this is the target directory</span>
+                                      <span class="hljs-attr">target_size=(150,</span> <span class="hljs-number">150</span>), <span class="hljs-comment"># all images will be resized to 150x150</span>
+                                      <span class="hljs-attr">batch_size=32,</span>
+                                      <span class="hljs-attr">class_mode='binary')</span>  <span class="hljs-comment"># since we use binary_crossentropy loss, we need binary labels</span>
+
+training_data.class_indices
+
+<span class="hljs-comment"># this is the augmentation configuration we will use for validation:</span>
+<span class="hljs-comment"># only rescaling</span>
+<span class="hljs-attr">valid_datagen</span> = ImageDataGenerator(<span class="hljs-attr">rescale=1./255)</span>
+
+<span class="hljs-comment"># this is a similar generator, for validation data</span>
+<span class="hljs-attr">valid_data</span> = valid_datagen.flow_from_directory(validation_data_path,
+                                  <span class="hljs-attr">target_size=(150,150),</span>
+                                  <span class="hljs-attr">batch_size=32,</span>
+                                  <span class="hljs-attr">class_mode='binary')</span>
+
+<span class="hljs-comment"># showing augmented images</span>
+<span class="hljs-attr">images</span> = [training_data[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] for i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>)]
+plotImages(images)
+
+<span class="hljs-comment"># save best model using vall accuracy</span>
+<span class="hljs-attr">model_path</span> = '/content/drive/My Drive/My ML Project /DL Project/CNN/cotton plant disease prediction/v4_pred_cott_dis.h5'
+<span class="hljs-attr">checkpoint</span> = ModelCheckpoint(model_path, <span class="hljs-attr">monitor='val_accuracy',</span> <span class="hljs-attr">verbose=1,</span> <span class="hljs-attr">save_best_only=True,</span> <span class="hljs-attr">mode='max')</span>
+<span class="hljs-attr">callbacks_list</span> = [checkpoint]
+
+<span class="hljs-comment">#Building cnn model</span>
+<span class="hljs-attr">cnn_model</span> = keras.models.Sequential([
+                                    keras.layers.Conv2D(<span class="hljs-attr">filters=32,</span> <span class="hljs-attr">kernel_size=3,</span> <span class="hljs-attr">input_shape=[150,</span> <span class="hljs-number">150</span>, <span class="hljs-number">3</span>]),
+                                    keras.layers.MaxPooling2D(<span class="hljs-attr">pool_size=(2,2)),</span>
+                                    keras.layers.Conv2D(<span class="hljs-attr">filters=64,</span> <span class="hljs-attr">kernel_size=3),</span>
+                                    keras.layers.MaxPooling2D(<span class="hljs-attr">pool_size=(2,2)),</span>
+                                    keras.layers.Conv2D(<span class="hljs-attr">filters=128,</span> <span class="hljs-attr">kernel_size=3),</span>
+                                    keras.layers.MaxPooling2D(<span class="hljs-attr">pool_size=(2,2)),</span>
+                                    keras.layers.Conv2D(<span class="hljs-attr">filters=256,</span> <span class="hljs-attr">kernel_size=3),</span>
+                                    keras.layers.MaxPooling2D(<span class="hljs-attr">pool_size=(2,2)),</span>
+
+                                    keras.layers.Dropout(<span class="hljs-number">0.5</span>),
+                                    keras.layers.Flatten(), <span class="hljs-comment"># neural network beulding</span>
+                                    keras.layers.Dense(<span class="hljs-attr">units=128,</span> <span class="hljs-attr">activation='relu'),</span> <span class="hljs-comment"># input layers</span>
+                                    keras.layers.Dropout(<span class="hljs-number">0.1</span>),
+                                    keras.layers.Dense(<span class="hljs-attr">units=256,</span> <span class="hljs-attr">activation='relu'),</span>
+                                    keras.layers.Dropout(<span class="hljs-number">0.25</span>),
+                                    keras.layers.Dense(<span class="hljs-attr">units=4,</span> <span class="hljs-attr">activation='softmax')</span> <span class="hljs-comment"># output layer</span>
+])
+
+
+<span class="hljs-comment"># compile cnn model</span>
+cnn_model.compile(<span class="hljs-attr">optimizer</span> = Adam(<span class="hljs-attr">lr=0.0001),</span> <span class="hljs-attr">loss='sparse_categorical_crossentropy',</span> <span class="hljs-attr">metrics=['accuracy'])</span>
+
+cnn_model.summary()
+
+<span class="hljs-comment"># train cnn model</span>
+<span class="hljs-attr">history</span> = cnn_model.fit(training_data,
+                          <span class="hljs-attr">epochs=500,</span>
+                          <span class="hljs-attr">verbose=1,</span>
+                          <span class="hljs-attr">validation_data=</span> valid_data,
+                          <span class="hljs-attr">callbacks=callbacks_list)</span> <span class="hljs-comment"># time start 16.06</span>
+
+<span class="hljs-attr">model_path2</span> = '/content/drive/My Drive/My ML Project /DL Project/CNN/cotton plant disease prediction/v4_1_pred_cott_dis.h5'
+cnn_model.save(model_path2)
+
+<span class="hljs-comment"># summarize history for accuracy</span>
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], <span class="hljs-attr">loc='upper</span> left')
+plt.show()
+<span class="hljs-comment"># summarize history for loss</span>
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], <span class="hljs-attr">loc='upper</span> left')
+plt.show()
+
+history.history
+</code></pre>
+
+</div>
+
+
+
+
+
+ </div>
+</div>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="sidebars.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
